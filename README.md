@@ -41,6 +41,7 @@ make all
 # 按语言单独运行
 make js
 make python
+afdsafadd
 make c
 make cpp
 make go
