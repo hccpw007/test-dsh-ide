@@ -1,0 +1,52 @@
+/* 静态示例页样式：无外部依赖，保证离线可用 */
+
+/* 基础排版：优先系统中文字体，避免加载网络字体 */
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1f2328;
+  background: #f6f8fa;
+}
+
+/* 顶部标题区 */
+.page-header {
+  padding: 32px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.page-header__subtitle {
+  margin: 8px 0 0;
+  color: #57606a;
+}
+
+/* 内容区左右留白，保证窄屏可读 */
+.content {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* 卡片容器：使用圆角与浅阴影区分层级 */
+.card {
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+}
+
+/* 标签列表：横排展示并允许换行 */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 4px 10px;
+  background: #ddf4ff;
+  border-radius: 12px;
+}

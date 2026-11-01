@@ -1,0 +1,14 @@
+# 应用配置示例：演示 TOML 的表格与类型化取值
+[app]
+name = "test-dsh-ide"
+# 时区固定为项目所在地，避免日志时间与本地时间错位
+timezone = "Asia/Shanghai"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[logging]
+level = "info"
+# 保留 7 天日志，足够排查近期问题且不占满磁盘
+retention_days = 7

@@ -1,0 +1,31 @@
+// 用户服务示例：演示 Protocol Buffers 的消息与服务定义
+syntax = "proto3";
+
+package demo.user.v1;
+
+option go_package = "example.com/test-dsh-ide/gen/demo/user/v1;userv1";
+
+// 用户信息
+message User {
+  // 全局唯一用户 ID
+  string id = 1;
+  string name = 2;
+  // 邮箱可为空，部分用户注册后才补充
+  optional string email = 3;
+}
+
+// 查询用户请求
+message GetUserRequest {
+  string id = 1;
+}
+
+// 查询用户响应
+message GetUserResponse {
+  User user = 1;
+}
+
+// 用户服务
+service UserService {
+  // 按 ID 查询用户，不存在时返回 NotFound
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}

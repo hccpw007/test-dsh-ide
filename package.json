@@ -1,0 +1,11 @@
+{
+  "name": "test-dsh-ide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "多语言示例仓库，用于验证 git 对各类文件的追踪",
+  "scripts": {
+    "demo:js": "node src/javascript/counter.js",
+    "demo:ts": "node --experimental-strip-types src/typescript/greeting.ts"
+  }
+}

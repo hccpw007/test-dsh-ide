@@ -1,0 +1,19 @@
+# 应用配置示例：演示 YAML 的层级结构与注释写法
+app:
+  name: test-dsh-ide
+  # 时区固定为项目所在地，避免日志时间与本地时间错位
+  timezone: Asia/Shanghai
+
+server:
+  # 仅本机访问，测试仓库不对外暴露端口
+  host: 127.0.0.1
+  port: 8080
+
+logging:
+  level: info
+  # 保留 7 天日志，足够排查近期问题且不占满磁盘
+  retentionDays: 7
+
+features:
+  # 静态页面预览开关，默认关闭以免本地启动多余服务
+  staticPreview: false

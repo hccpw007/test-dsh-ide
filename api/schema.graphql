@@ -1,0 +1,38 @@
+# GraphQL 接口示例：演示 SDL 定义与查询入口
+
+"""用户信息"""
+type User {
+  id: ID!
+  name: String!
+  """邮箱可为空，部分用户注册后才补充"""
+  email: String
+  """用户的订单列表，未下单时返回空数组而非 null"""
+  orders: [Order!]!
+}
+
+"""订单信息"""
+type Order {
+  id: ID!
+  amount: Float!
+  status: OrderStatus!
+}
+
+"""订单状态"""
+enum OrderStatus {
+  """已创建未支付"""
+  PENDING
+  """已支付"""
+  PAID
+  """已发货"""
+  SHIPPED
+  """已关闭"""
+  CLOSED
+}
+
+"""查询入口"""
+type Query {
+  """按 ID 查询用户，不存在时返回 null"""
+  user(id: ID!): User
+  """分页查询用户列表，first 限制单页数量"""
+  users(first: Int = 20, after: String): [User!]!
+}

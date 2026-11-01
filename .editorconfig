@@ -1,0 +1,17 @@
+# 统一编辑器行为，避免不同 IDE 产生无意义的空白差异
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+# Makefile 必须以 tab 缩进，否则 make 无法识别命令行
+[Makefile]
+indent_style = tab
+
+# Python 社区约定使用 4 空格缩进
+[*.py]
+indent_size = 4

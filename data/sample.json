@@ -1,0 +1,26 @@
+{
+  "project": "test-dsh-ide",
+  "description": "多语言示例仓库，用于验证 git 对各类文件的追踪与差异展示",
+  "languages": [
+    { "name": "TypeScript", "path": "src/typescript/greeting.ts", "ext": ".ts" },
+    { "name": "JavaScript", "path": "src/javascript/counter.js", "ext": ".js" },
+    { "name": "Python", "path": "python/calculator.py", "ext": ".py" },
+    { "name": "Rust", "path": "rust/src/main.rs", "ext": ".rs" },
+    { "name": "Go", "path": "go/main.go", "ext": ".go" },
+    { "name": "Java", "path": "java/src/main/java/com/example/App.java", "ext": ".java" },
+    { "name": "Kotlin", "path": "kotlin/src/main/kotlin/Main.kt", "ext": ".kt" },
+    { "name": "C", "path": "c/main.c", "ext": ".c" },
+    { "name": "C++", "path": "cpp/main.cpp", "ext": ".cpp" },
+    { "name": "C#", "path": "csharp/Program.cs", "ext": ".cs" },
+    { "name": "Swift", "path": "swift/main.swift", "ext": ".swift" },
+    { "name": "Ruby", "path": "ruby/greeting.rb", "ext": ".rb" },
+    { "name": "PHP", "path": "php/index.php", "ext": ".php" },
+    { "name": "Shell", "path": "shell/backup.sh", "ext": ".sh" },
+    { "name": "SQL", "path": "sql/schema.sql", "ext": ".sql" },
+    { "name": "Lua", "path": "lua/greeting.lua", "ext": ".lua" },
+    { "name": "Dart", "path": "dart/main.dart", "ext": ".dart" },
+    { "name": "R", "path": "r/analysis.R", "ext": ".R" }
+  ],
+  "formats": ["json", "yaml", "toml", "xml", "csv", "proto", "graphql", "html", "css", "markdown"],
+  "verifiedAt": "2026-11-01"
+}
