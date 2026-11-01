@@ -5,6 +5,7 @@
 ## 目录结构
 | 目录 | 内容 | 主要扩展名 |
 |------|------|-----------|
+111111
 | `src/` | 前端生态示例（TS / JS / React / Vue / Svelte） | `.ts` `.js` `.tsx` `.vue` `.svelte` |
 | `web/` | 无依赖静态页面 | `.html` `.css` |
 | `python/` | Python 示例与单元测试 | `.py` `.toml` |
